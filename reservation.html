@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Karlovy Vary – Reservation Request</title>
+
+    <meta
+      name="description"
+      content="Send a reservation request for your visit to Karlovy Vary, including preferred dates, number of guests and type of accommodation."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/reservation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="teaching-notice">
+        This project was created by students and is intended for educational
+        purposes only.
+      </div>
+      <div class="navbar">
+        <div class="logo">KARLOVY VARY</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="landmarks.html">Landmarks</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="reservation.html" class="active">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="my-reservations.html">My Reservations</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="reservation-wrapper">
+      <div class="reservation-inner">
+        <div class="reservation-left">
+          <h1 class="reservation-heading">Reservation Request</h1>
+          <p class="reservation-text">
+            You can use this form to send a non-binding reservation request for
+            your stay in Karlovy Vary. Please provide your basic details,
+            preferred dates and number of guests. We will review your request
+            and contact you with more information.
+          </p>
+
+          <div class="reservation-subtitle">How it works</div>
+          <p class="reservation-subtext">
+            After submitting the form, your request will be processed by our
+            team or partner accommodation providers. You will receive a reply
+            with available options, prices and additional details related to
+            your visit.
+          </p>
+        </div>
+
+        <div class="reservation-right">
+          <form id="reservation-form">
+            <div class="reservation-group">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" />
+            </div>
+
+            <div class="reservation-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="reservation-group">
+              <label for="arrival">Arrival date</label>
+              <input type="date" id="arrival" name="arrival" />
+            </div>
+
+            <div class="reservation-group">
+              <label for="departure">Departure date</label>
+              <input type="date" id="departure" name="departure" />
+            </div>
+
+            <div class="reservation-group">
+              <label for="guests">Number of guests</label>
+              <input type="number" id="guests" name="guests" min="1" max="20" />
+            </div>
+
+            <div class="reservation-group">
+              <label for="type">Type of accommodation</label>
+              <select id="type" name="type">
+                <option value="">Please select</option>
+                <option value="hotel">Hotel</option>
+                <option value="guesthouse">Guesthouse</option>
+                <option value="apartment">Apartment</option>
+                <option value="spa-resort">Spa resort</option>
+              </select>
+            </div>
+
+            <div class="reservation-group">
+              <label for="notes">Additional requests</label>
+              <textarea
+                id="notes"
+                name="notes"
+                placeholder="Special requirements, preferred location, etc."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="reservation-button">
+              Send reservation request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>Copyright 2025 - Semestral Project Group 13</footer>
+
+    <script src="js/reservation.js"></script>
+  </body>
+</html>

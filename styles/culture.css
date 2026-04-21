@@ -1,0 +1,115 @@
+.culture-wrapper {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px 0 40px;
+}
+
+.culture-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  padding: 30px;
+}
+.culture-inner h2 {
+  color: #11457e;
+}
+
+.culture-heading {
+  font-size: 28px;
+  font-weight: bold;
+
+  padding: 10px 12px 10px 0;
+  margin-bottom: 10px;
+  color: #11457e;
+}
+
+.culture-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.culture-section {
+  margin-bottom: 25px;
+}
+
+.culture-section h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.culture-section p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.culture-hero {
+  width: 40%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.music-bg {
+  background-image: url("../img/music.webp");
+}
+.movie-bg {
+  background-image: url("../img/king.jfif");
+}
+.local-bg {
+  background-image: url("../img/local.webp");
+}
+.cultural-bg {
+  background-image: url("../img/cultural.webp");
+}
+
+.culture-context {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.culture-paragraph {
+  width: 60%;
+}
+
+.culture-event {
+  margin-top: 10px;
+  padding: 15px;
+  border-left: 4px solid #d7141a;
+  background-color: #fafafa;
+}
+
+.culture-event .summary {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.event-date,
+.location {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.event-description {
+  font-size: 14px;
+  color: #555;
+}
+@media (max-width: 900px) {
+  .culture-context {
+    flex-direction: column;
+  }
+
+  .culture-hero {
+    width: 100%;
+    height: 220px;
+  }
+
+  .culture-paragraph {
+    width: 100%;
+  }
+}

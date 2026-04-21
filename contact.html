@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact – Karlovy Vary Information</title>
+    <meta
+      name="description"
+      content="Contact us for more information about Karlovy Vary, tourism, culture and city services."
+    />
+
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="teaching-notice">
+        This project was created by students and is intended for educational
+        purposes only.
+      </div>
+      <div class="navbar">
+        <div class="logo">KARLOVY VARY</div>
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="landmarks.html">Landmarks</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="my-reservations.html">My Reservations</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="map-wrapper">
+      <div class="map-inner">
+        <div class="map-placeholder">
+          <div class="map-pin">
+            <div class="map-pin-inner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-wrapper">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="contact-heading">Contact Information</div>
+
+          <p class="contact-text">
+            If you have any questions, suggestions, or require additional
+            information about Karlovy Vary, please feel free to contact us. We
+            are happy to assist visitors, residents, and partners with inquiries
+            related to tourism, culture, and city services.
+          </p>
+
+          <div class="contact-subtitle">Further Information</div>
+          <p class="contact-subtext">
+            This contact form can be used for general questions, feedback, and
+            non-urgent requests. For official matters or specific issues, please
+            include detailed information in your message to ensure an accurate
+            response.
+          </p>
+          <div class="vcard">
+            <div class="fn org">Karlovy Vary Information Center</div>
+            <div class="adr">
+              <span class="locality">Karlovy Vary</span>,
+              <span class="country-name">Czech Republic</span>
+            </div>
+            <div class="email">info@karlovyvary.cz</div>
+            <div class="tel">+420 123 456 789</div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form id="contact-form">
+            <div class="contact-form-group">
+              <label for="name">Name and Surname</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+
+            <div class="contact-form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+
+            <button type="submit" class="contact-button">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>Copyright 2025 - Semestral Project Group 13</footer>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>

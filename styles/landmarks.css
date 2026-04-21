@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+header {
+  background: #dcdde1;
+  border-bottom: 1px solid #ccc;
+}
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  margin-right: 40px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+}
+.nav-links li a.active {
+  font-weight: bold;
+}
+
+.landmarks-wrapper {
+  flex: 1;
+  padding: 30px 0 40px;
+  background: white;
+}
+.landmarks-inner {
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+}
+
+.side-menu {
+  border: 1px solid #ddd;
+}
+.side-menu ul {
+  list-style: none;
+}
+.side-menu li {
+  border-bottom: 1px solid #ddd;
+}
+.side-menu a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+.side-menu a:hover {
+  background: #eee;
+}
+.side-menu a.active {
+  background: #11457e;
+  font-weight: bold;
+  color: #fff;
+}
+
+.landmarks-content {
+  padding-right: 10px;
+}
+
+.landmarks-heading {
+  border-bottom: 1px solid #d7141a;
+  padding: 10px 12px 10px 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #11457e;
+}
+.landmarks-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.sub-block {
+  margin-bottom: 22px;
+  color: #11457e;
+}
+.sub-block h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.sub-block p {
+  color: #666;
+}
+
+.landmarks-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+
+  height: 400px;
+}
+.image-placeholder {
+  height: 100%;
+}
+.image-placeholder img {
+  height: 100%;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px 0;
+  height: 100px;
+}
+.landmarks-hero {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spa-bg {
+  background-image: url("../img/spa.jpg");
+}
+
+.church-bg {
+  background-image: url("../img/church.jpg");
+}
+
+.towers-bg {
+  background-image: url("../img/towers.jpg");
+}
+
+.protected-bg {
+  background-image: url("../img/protected.jpg");
+}
+
+@media (max-width: 900px) {
+  .landmarks-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-menu {
+    order: 1;
+  }
+
+  .landmarks-image,
+  .landmarks-hero {
+    order: 2;
+  }
+
+  .landmarks-content {
+    order: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .landmarks-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-menu {
+    order: 1;
+  }
+
+  .landmarks-image,
+  .landmarks-hero {
+    order: 2;
+  }
+
+  .landmarks-content {
+    order: 3;
+  }
+}
